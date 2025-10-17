@@ -1,0 +1,558 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OBMC Rubotics Club Application Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+	<style>
+	body{
+		background-image: url('https://plus.unsplash.com/premium_photo-1680509034814-e733c5f873ac?q=80&w=1027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+	}
+</style>
+ <h1>My Website</h1>
+
+<div class="container">
+
+<div class= "rubius">
+	<h4>About Me</h4>
+	<p>Text here</p>
+</div>
+	
+	<div class= "rubius">
+	<h4>Gallery</h4>
+	<p></p>
+	</div>
+
+	<div class= "rubius">
+	<h4>Contact</h4>
+	<p>Text here</p>
+	</div>
+</div>
+
+</body>
+</html>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            font-size: 32px;
+            margin-right: 15px;
+            color: #4CAF50;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 25px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: #4CAF50;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .hero {
+            background: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            background: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .content-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 28px;
+            color: #1a2a6c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4CAF50;
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
+        
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        
+        .radio-option, .checkbox-option {
+            display: flex;
+            align-items: center;
+        }
+        
+        .radio-option input, .checkbox-option input {
+            margin-right: 8px;
+        }
+        
+        .activities-section, .links-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .activities-list, .links-list {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .activities-list li, .links-list li {
+            margin-bottom: 8px;
+        }
+        
+        .links-list a {
+            color: #1a2a6c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .links-list a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        
+        .submit-button {
+            background-color: #1a2a6c;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 20px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .submit-button:hover {
+            background-color: #15225c;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 20px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #4CAF50;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0 10px;
+            }
+            
+            .hero h2 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <h1>OBMC Rubics Club</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to OBMC Rubics Club</h2>
+                <p>Where innovation meets technology. Join us to explore the exciting world of robotics!</p>
+                <a href="#application" class="btn">Apply Now</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="section-title">About Our Club</h2>
+            <p>Welcome to the OBMC Rubics Club! We are a community of passionate students who love exploring the world of robotics, programming, and engineering. Our club provides a platform for students to learn, innovate, and collaborate on exciting robotics projects.</p>
+            <p>Whether you're a beginner or an experienced coder, our club offers opportunities for everyone to grow their skills and work on challenging projects. We participate in competitions, host workshops, and organize fun events throughout the year.</p>
+            <p>Join us to be part of a team that builds everything from line-following robots to advanced autonomous systems!</p>
+        </section>
+
+        <section id="application" class="content-section">
+            <h2 class="section-title">Application Form</h2>
+            <div class="form-container">
+                <p class="welcome-text">Welcome! Please fill out this form to apply for our school's Rubics Club.</p>
+                
+                <form id="application-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="grade-level">Grade Level:</label>
+                        <select id="grade-level" name="grade-level" required>
+                            <option value="">Select your grade</option>
+                            <option value="9">9th Grade</option>
+                            <option value="10">10th Grade</option>
+                            <option value="11">11th Grade</option>
+                            <option value="12">12th Grade</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="code">Coding Experience:</label>
+                        <select id="code" name="code">
+                            <option value="">Select your experience level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>What are your skills?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="programming" name="skills" value="programming">
+                                <label for="programming">Programming</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="design" name="skills" value="design">
+                                <label for="design">Design</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="electronics" name="skills" value="electronics">
+                                <label for="electronics">Electronics</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="mechanics" name="skills" value="mechanics">
+                                <label for="mechanics">Mechanics</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reason">Tell us why you want to join</label>
+                        <textarea id="reason" name="reason" placeholder="Please share your motivation for joining the Robotics Club..."></textarea>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h3>Top Robotics Activities We Offer:</h3>
+                        <ol class="activities-list">
+                            <li>Line following Robot</li>
+                            <li>Obstacle Avoidance Programming</li>
+                            <li>Light Following Robot</li>
+                            <li>Robotic Arm Programming</li>
+                            <li>Autonomous Navigation Challenges</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="links-section">
+                        <h3>Helpful Links:</h3>
+                        <ol class="links-list">
+                            <li><a href="https://www.robotics.org" target="_blank">Robotics.org</a></li>
+                            <li><a href="https://www.firstinspires.org/robotics/frc" target="_blank">FIRST Robotics</a></li>
+                            <li><a href="https://www.vexrobotics.com" target="_blank">VEX Robotics</a></li>
+                        </ol>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <h2 class="section-title">Gallery</h2>
+            <p>Check out some of our recent projects and club activities!</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Robotics Project">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Robotics Workshop">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Team Building">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Competition">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions about our Robotics Club? Feel free to reach out to us!</p>
+            <p><strong>Club Advisor:</strong> Dr. Sarah Johnson</p>
+            <p><strong>Email:</strong> roboticsclub@obmc.edu</p>
+            <p><strong>Meeting Time:</strong> Every Wednesday, 3:30 PM - 5:00 PM</p>
+            <p><strong>Location:</strong> Science Building, Room 204</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 OBMC Rubiks Club</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>Designed by Prinze Caleb C. Alminario</p>
+        </div>
+    </footer>
+</body>
+</html>
